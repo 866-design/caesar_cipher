@@ -29,3 +29,6 @@ def main():
 
   for i in range(0, len(blocks), blocks_per_line):
     print(' '.join(blocks[i:i+blocks_per_line]))
+
+if __name__ == "__main__":
+  main()
