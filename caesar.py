@@ -24,4 +24,8 @@ def main():
   blocks_per_line = 10
   
   blocks = []
-  for i in range
+  for i in range(0, len(encoded_chars), block_size):
+    blocks.append(''.join(encoded_chars[i:i+block_size]))
+
+  for i in range(0, len(blocks), blocks_per_line):
+    print(' '.join(blocks[i:i+blocks_per_line]))
